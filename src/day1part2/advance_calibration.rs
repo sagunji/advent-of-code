@@ -12,7 +12,7 @@ fn replace_words_with_digits(s: &str) -> String {
   for &(word, digit) in DIGIT_MAP {
       result = result.replace(word, digit);
   }
-  result
+  result;
 }
 
 fn get_calibration_digit(s: &str) -> String {
@@ -27,7 +27,7 @@ fn get_calibration_digit(s: &str) -> String {
           first_digit = Some(char);
       }
       last_digit = Some(char);
-  }
+    }
   }
 
   match (first_digit, last_digit) {
